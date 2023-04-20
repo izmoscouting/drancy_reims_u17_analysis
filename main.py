@@ -8,7 +8,7 @@ from st_pages import Page, show_pages, add_page_title
 
 show_pages(
     [
-        Page("main.py ", "Menu Principal", "⚽"),
+        Page("main.py", "Menu Principal", "⚽"),
         Page("pages/1_🦾_Equipe.py", "Equipe", "🦾"),
         Page("pages/2_🏃‍♂️_Joueur.py", "Joueurs", "🏃‍♂️")
     ]

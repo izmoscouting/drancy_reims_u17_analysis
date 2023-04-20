@@ -2,11 +2,24 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import openpyxl
+from st_pages import Page, show_pages, add_page_title
+
+
+
+show_pages(
+    [
+        Page("main.py", "Menu Principal", "⚽"),
+        Page("pages/1_🦾_Equipe.py", "Equipe", "🦾"),
+        Page("pages/2_🏃‍♂️_Joueur.py", "Joueurs", "🏃‍♂️")
+    ]
+)
+
 
 st.set_page_config(layout='wide',
                    initial_sidebar_state='expanded',
                    page_title='U17NAT: JA Drancy - SD Reims',
                    page_icon='📊')
+
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)

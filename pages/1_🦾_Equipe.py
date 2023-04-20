@@ -5,8 +5,10 @@ from matplotlib.cm import get_cmap
 import matplotlib.pyplot as plt
 import cmasher as cmr
 from matplotlib.colors import LinearSegmentedColormap
+import openpyxl
 from mplsoccer import Pitch, VerticalPitch, FontManager
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def get_teams_name(df):
     team1,team2 = df.Team.unique()
@@ -158,7 +160,7 @@ header = st.container()
 dataset = st.container()
 
 with header:
-    st.title('Partie Équipe du site web!')
+    st.title('Partie Équipe du site!')
     st.write('Ici vous aurez des beaux graphiques pour vivre \nle match comme si vous y étiez!')
 
 df = pd.read_excel('data/jad_reims.xlsx',sheet_name='main')

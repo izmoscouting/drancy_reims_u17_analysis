@@ -7,6 +7,11 @@ import cmasher as cmr
 from matplotlib.colors import LinearSegmentedColormap
 from mplsoccer import Pitch, VerticalPitch, Sbopen, FontManager
 import numpy as np
+import openpyxl
+
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
+st.title('Partie Joueur du site!')
 
 def get_heatmap(player):
 

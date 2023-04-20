@@ -11,8 +11,6 @@ import openpyxl
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-st.title('Partie Joueur du site!')
-
 def get_heatmap(player):
 
     player_df = df.loc[df.Player==player,['Team','Numero','X','Y']]
